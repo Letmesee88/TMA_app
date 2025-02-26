@@ -5,6 +5,9 @@ import { InitDataPage } from '@/pages/InitDataPage.tsx';
 import { LaunchParamsPage } from '@/pages/LaunchParamsPage.tsx';
 import { ThemeParamsPage } from '@/pages/ThemeParamsPage.tsx';
 import { TONConnectPage } from '@/pages/TONConnectPage/TONConnectPage';
+import { VapeTrackerPage } from '@/pages/VapeTrackerPage/VapeTrackerPage';
+import { StatsPage } from '@/pages/StatsPage/StatsPage';
+import { SettingsPage } from '@/pages/SettingsPage/SettingsPage';
 
 interface Route {
   path: string;
@@ -14,7 +17,10 @@ interface Route {
 }
 
 export const routes: Route[] = [
-  { path: '/', Component: IndexPage },
+  { path: '/', Component: VapeTrackerPage },
+  { path: '/stats', Component: StatsPage, title: 'Статистика' },
+  { path: '/settings', Component: SettingsPage, title: 'Настройки' },
+  { path: '/index', Component: IndexPage, title: 'Демо' },
   { path: '/init-data', Component: InitDataPage, title: 'Init Data' },
   { path: '/theme-params', Component: ThemeParamsPage, title: 'Theme Params' },
   { path: '/launch-params', Component: LaunchParamsPage, title: 'Launch Params' },

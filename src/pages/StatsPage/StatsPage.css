@@ -1,0 +1,14 @@
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+}
+
+.stats-summary {
+  margin-bottom: 16px;
+}
+
+.section-title {
+  margin: 8px 0;
+}
